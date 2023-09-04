@@ -278,13 +278,11 @@ if st.session_state.subtitles:  # If raw subtitles are available in the session 
                 completion =  st.session_state.formatted_text
                 completions.append(completion)
 
-                output = " ".join(completions)
-
         else:
 
             output = st.session_state.formatted_text = format_with_clarifai_api(st.session_state.subtitles, SYSTEM_PROMPT)
 
-
+        output = " ".join(completions)
 
 
         # st.session_state.formatted_text = format_with_clarifai_api(st.session_state.subtitles, format_prompt)

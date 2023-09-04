@@ -23,6 +23,7 @@ from clarifai_grpc.channel.clarifai_channel import ClarifaiChannel
 from clarifai_grpc.grpc.api import resources_pb2, service_pb2, service_pb2_grpc
 from clarifai_grpc.grpc.api.status import status_code_pb2
 
+nltk.download('punkt')
 MAX_TOKENS = 4096
 # SYSTEM_PROMPT = "The following is a conversation with an AI assistant. The assistant is helpful, harmless, and honest." # 300 tokens
 
